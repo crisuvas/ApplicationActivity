@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.util.Log
 
 class Main2Activity : AppCompatActivity() {
-    
-    val TAG = "Activity 1"
+
+    val TAG = "Activity 2"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +21,10 @@ class Main2Activity : AppCompatActivity() {
         Log.d(TAG, "onStart")
     }
 
+    override fun onRestart(){
+        super.onRestart()
+        Log.d(TAG, "onRestart")
+    }
 
     override fun onResume(){
         super.onResume()
